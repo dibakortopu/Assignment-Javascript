@@ -4,8 +4,9 @@
     var meter = kilometer * 1000;
     return meter;
 }
-var result = kilometerToMeter(1);
+var result = kilometerToMeter();
 console.log(result);
+
 
 // 2.Budget Calculator
 function budgetCalculator(watch,mobile,laptop){
@@ -16,8 +17,9 @@ function budgetCalculator(watch,mobile,laptop){
     return cost;   
 }
 
-var totalcost = budgetCalculator (-1,1,1)
+var totalcost = budgetCalculator ()
 console.log(totalcost);
+
 
 
 /* 3.Hotel Cost */
@@ -40,15 +42,17 @@ else{
 }
 return cost;
 }
-var totalcost = hotelCost(50);
+var totalcost = hotelCost();
 console.log(totalcost);
+
+
 
 // 4.Maga Friend
   function megaFriend(arr) {
     var arr = ['maruf', 'arif', 'rakib', 'manik', 'farhad', 'rayhan'];
     let word = "";
     for (let i = 0; i < arr.length; i++) {
-      if (word.length < arr[i].length) {
+    if (word.length < arr[i].length) {
         word = arr[i];
       }
     }
@@ -57,17 +61,6 @@ console.log(totalcost);
   console.log(megaFriend(['maruf', 'arif', 'rakib', 'manik', 'farhad', 'rayhan']));
 
 
-//Budget Calculator
-  function budgetCalculator(watch,mobile,laptop){
-      var watch = watch * 50;
-      var mobile = mobile * 100;
-      var laptop = laptop * 500;
-      cost = watch + mobile + laptop;
-      return cost;   
-  }
-  
-  var totalcost = budgetCalculator (1,1,1)
-  console.log(totalcost);
   
   
 
